@@ -1,108 +1,99 @@
-# 📊 Gender Pay Gap Analysis in the UK by Industry (Real-World Data)
+# Gender Pay Gap Analysis – United Kingdom (2024)
 
-This project explores the Gender Pay Gap (GPG) across major industries in the United Kingdom using real-world hourly earnings data. The analysis was completed as part of the **Google Advanced Data Analytics Certificate** under the course **"The Power of Statistics"**, focusing on statistical thinking, descriptive analysis, and inferential testing.
-
----
-
-## 📁 Dataset
-
-- **Source:** [ILOSTAT - International Labour Organization](https://ilostat.ilo.org/)
-- **Title:** Average Hourly Earnings by Sex and Industry
-- **Country Selected:** United Kingdom
-- **Data Format:** CSV
-- **Dimensions:** Industry, Gender, Earnings
+## Objective
+This project analyzes and quantifies the gender pay gap in average hourly earnings across major industries in the United Kingdom using official data from the ILOSTAT database (2024). It identifies sectors where the disparities are most significant and examines both average differences and variability in earnings between male and female employees.
 
 ---
 
-## 🎯 Objective
+## Problem Statement
+Despite significant global progress toward gender equality, the gender pay gap (GPG) remains a persistent issue in many economies. In the UK, this gap continues to influence labor market dynamics, economic fairness, and the formulation of evidence-based policy.
 
-To examine and quantify:
-- Differences in average hourly earnings between men and women
-- Dispersion (variation) of earnings within each gender
-- Statistical and practical significance of these pay differences using:
-  - Confidence intervals
-  - Two-sample t-tests
-  - Cohen’s *d* effect sizes
+This project investigates the magnitude and nature of the gender pay gap across sectors and evaluates whether these gaps are statistically and practically significant.
 
 ---
 
-## 🧪 Methodology
-
-### 1. **Data Preparation**
-- Filtered for United Kingdom only
-- Selected latest available year (2022)
-- Cleaned industry names for clarity
-- Pivoted the table to separate Male and Female earnings
-
-### 2. **Descriptive Statistics**
-- Calculated:
-  - Mean earnings for males and females
-  - Standard deviation of earnings for each gender
-  - Gender Pay Gap (%)
-- Visualized data with:
-  - Bar charts
-  - Normal distribution plots
-
-### 3. **Inferential Statistics**
-- Constructed **95% confidence intervals** for mean differences
-- Ran **Welch’s two-sample t-tests** for each industry
-- Calculated **Cohen’s d** for effect size
+## Project Goals
+- Calculate and visualize gender-based differences in average hourly earnings  
+- Explore measures of central tendency (mean, median) and dispersion (standard deviation, variance)  
+- Examine the shape of earnings distributions using normal curves  
+- Perform inferential statistical tests (confidence intervals, t-tests, effect size)  
+- Draw meaningful conclusions about pay equity across UK industries  
 
 ---
 
-## 📈 Key Visuals
+## Data Source
 
-- 📊 Bar plot of Gender Pay Gap by Industry  
-- 📉 Normal distribution curves of male and female earnings  
-- 📏 Error bars for confidence intervals  
-- 🧮 Cohen’s *d* chart showing practical effect size
+- **Primary Source**: [ILOSTAT – International Labour Organization](https://ilostat.ilo.org/data/)  
+- **Dataset Title**: Average hourly earnings by economic activity (disaggregated by sex), 2024  
+- **Country**: United Kingdom  
+- **Data Format**: CSV (cleaned subset used for this analysis)
 
----
-
-## ✅ Final Conclusion
-
-This analysis shows that the Gender Pay Gap is both **statistically significant and practically large** in several high-paying sectors in the UK.
-
-### 🔹 Major Findings
-
-| Insight                                   | Summary                                                                 |
-|------------------------------------------|-------------------------------------------------------------------------|
-| **Persistent Pay Gap**                   | Women earn ~23–30% less in Finance, Manufacturing, ICT                 |
-| **Greater Dispersion in Male Earnings**  | Standard deviation: Males = £4.84, Females = £3.60                      |
-| **Statistical Significance**             | Confirmed by t-tests and confidence intervals                          |
-| **Effect Size**                          | Cohen’s *d* shows large practical differences in key industries         |
-| **Less Inequality in Education/Health**  | Gaps are negligible and statistically insignificant                    |
-
-### 📌 Takeaway
-
-The gender pay gap in the UK is not just about averages. It reflects deeper structural inequality in earnings **spread**, **access to high-paying sectors**, and **opportunity distributions**. This analysis supports policy and organizational change by combining rigorous statistics with practical interpretation.
+- 📁 **Download Dataset Used in This Project**:  
+  [Google Drive CSV – Gender Pay Gap UK (2024)](https://drive.google.com/file/d/1WWDAfzEwrNX92RLVtbA4qUOSp1d4RA3o/view?usp=sharing)
 
 ---
 
-## 🛠️ Tools Used
-
-- **Python** (Pandas, NumPy, SciPy, Matplotlib, Seaborn, Tabulate)
-- **Jupyter Notebook**
-- **Markdown for documentation**
-
----
-
-## 📜 License
-
-Open-source for educational and non-commercial use. Please cite the ILOSTAT data source if reusing.
+## Tools and Techniques
+- **Python**: pandas, numpy, scipy, matplotlib, seaborn  
+- **Statistical Methods**:  
+  - Descriptive statistics (mean, std dev, quartiles, percentiles)  
+  - Normal distribution visualization  
+  - Confidence intervals for mean differences  
+  - Two-sample t-tests  
+  - Effect size (Cohen’s d)  
 
 ---
 
-## 🙌 Acknowledgments
+## Key Insights
 
-This project was completed as part of the **Google Advanced Data Analytics Certificate** capstone, under the course:  
-**The Power of Statistics – Module: Measures of Central Tendency, Dispersion, and Inferential Thinking**
+### 1. Gender Pay Gap Exists Across Industries
+- Male average hourly earnings are consistently higher across most sectors.
+- Women earn approximately **15–35% less** than men in key industries such as finance, manufacturing, and ICT.
+
+### 2. Male Earnings Are More Dispersed
+- Standard deviation for male earnings is **£4.84**, indicating wider variability.
+- Female earnings have a smaller standard deviation (**£3.60**), showing more consistency.
+
+### 3. Statistical Significance Confirmed
+- In industries like **Finance**, **Manufacturing**, and **ICT**, the pay gap is both statistically and practically significant.
+- In **Education** and **Health & Social Work**, the gap is smaller or statistically insignificant.
 
 ---
 
-## 🌐 Contact
+## Final Visualizations
+- Bar charts showing average male vs. female earnings per industry  
+- Gap (%) by industry  
+- Distribution curves highlighting earnings spread (normal distribution with standard deviation)  
+- Confidence interval plots and annotated test statistics  
 
-**Created by:** Niamatullah Habibi  
-📧 [Your Email or LinkedIn]  
-🔗 [LinkedIn Profile or GitHub Repo]
+---
 
+## Outputs
+- `GPG_UK_Industry_Analysis_2024.ipynb` – main notebook with all code, plots, and interpretations  
+- `README.md` – documentation and summary  
+- `summary_statistics.csv` – optional export of cleaned, computed results  
+
+---
+
+## Conclusion
+This project demonstrates that the gender pay gap in the UK is not only an issue of average differences, but also one of distributional inequality. Combining descriptive and inferential statistics provides a more complete view of how gender impacts pay across sectors. These findings can support policy recommendations, HR equity reviews, or further academic research.
+
+---
+
+## Project Links
+- **GitHub Repository**: [GPG_UK_Industry_Analysis_2024](https://github.com/niamat-habibi/GPG_UK_Industry_Analysis_2024/)
+- **Data Source Website**: [ILOSTAT Official Site](https://ilostat.ilo.org/data/)
+- **Dataset Used (Google Drive)**: [Download CSV](https://drive.google.com/file/d/1WWDAfzEwrNX92RLVtbA4qUOSp1d4RA3o/view?usp=sharing)
+
+---
+
+## Contact
+- **Name**: Niamatullah Habibi  
+- **LinkedIn**: [linkedin.com/in/niamatullah-habibi](https://www.linkedin.com/in/niamatullah-habibi)  
+- **Email**: [ni_habibi@yahoo.com](mailto:ni_habibi@yahoo.com)
+
+---
+
+## License
+MIT License  
+This project is open-source and available for educational or analytical use.
